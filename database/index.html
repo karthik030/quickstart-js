@@ -42,6 +42,30 @@
   <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue_grey-orange.min.css">
   <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
 
+<!-- kar -->
+
+
+<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+
+<!-- Firebase App is always required and must be first -->
+<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-app.js"></script>
+
+<!-- Add additional services that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-auth.js"></script>
+<script>
+  var config = {
+    // ...
+    apiKey: "AIzaSyAxC_sy1BEowuvwenO_aDK6wVozeUWVGbQ",
+    authDomain: "firechat-dc9d9.firebaseapp.com",
+    databaseURL: "https://firechat-dc9d9.firebaseio.com",
+    projectId: "firechat-dc9d9",
+    storageBucket: "",
+    messagingSenderId: "906481191777"
+  };
+  firebase.initializeApp(config);
+</script>
+<!-- end kar -->
+
   <link rel="stylesheet" href="main.css">
 
 </head>
@@ -138,11 +162,16 @@
 <!-- Import and configure the Firebase SDK -->
 <!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
 <!-- If you do not serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
+
+<!--kar
 <script src="/__/firebase/5.8.6/firebase-app.js"></script>
 <script src="/__/firebase/5.8.6/firebase-auth.js"></script>
 <script src="/__/firebase/5.8.6/firebase-database.js"></script>
 <script src="/__/firebase/init.js"></script>
-
+endkar-->
 <script src="scripts/main.js"></script>
 </body>
+
+
+
 </html>
